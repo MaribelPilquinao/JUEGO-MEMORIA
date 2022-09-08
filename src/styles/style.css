@@ -1,0 +1,181 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    text-align: center;
+  }
+  .app{
+   
+  }
+  h1{
+    color: #f9e4b7;
+    margin-top: 4rem;
+  }
+  .circle-title-1, .circle-title-2{
+    border: 1px solid #fff;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 50%;
+    top: -2rem;
+    left: -3rem;
+    background-color: #b1ddff;
+
+  }
+  .circle-title-2{
+    width: .3rem;
+    height: .3rem;
+    top: 6.7rem;
+    left: 11.5rem;
+    background-color: #b8f57f;
+  }
+  .linear-circle{
+    border: 1.7px solid #fbe8c3;
+    width: 33rem;
+    height: 33rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 8rem;
+    left: -15rem;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 17rem;
+    width: 17rem;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 6rem;
+  }
+  .card {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .card.down {
+    background: #cedfe7;
+  }
+  
+  .card.up {
+    background: #ffc9ce;
+  }
+  
+  .card.selected {
+    background: #b1ddff;
+  }
+  .circle-footer-1, .circle-footer-2{
+    border: 1px solid #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: #fbe8c3;
+  }
+  .circle-footer-2{
+    right: 5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fbe8c3;
+  }
+  .linear{
+    border: 1.4px solid #d8d8d8;
+    width: 19rem;
+    height: 19rem;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    bottom: 1rem;
+    left: -6rem;
+  }
+  
+  /* MEDIA QUERIES */
+  /* mobile */
+  @media only screen and (min-width: 360px) {
+    .linear{
+        bottom: 5.4rem;
+    }
+  }
+
+  @media only screen and (min-width: 390px) {
+    .linear{
+        bottom: 12.2rem;
+    }
+    .circle-title-2{
+        left: 12rem;
+    }
+
+  }
+  @media only screen and (min-width: 412px){
+    .linear-circle{
+        top: 12.3rem;
+        /* left: -15rem; */
+    }
+  }
+
+  /* ---- */
+  @media only screen and (min-width: 540px){
+    .linear{
+        bottom: .3rem;
+    }
+    .circle-title-2{
+        left: 16.5rem;
+    }
+  }
+
+  /* IPAD */
+
+  @media only screen and (min-width: 820px){
+       h1{
+        font-size: 3rem;
+       }
+        .cards-container{
+        height: 22rem;
+        width: 22rem;
+        margin-top: 1rem;
+       } 
+       .linear{
+        bottom: 5rem;
+        width: 25rem;
+        height: 25rem;
+        border: 2px solid #d8d8d8;
+        bottom: 7rem;
+       }
+       .linear-circle{
+        width: 55rem;
+        height: 55rem;
+        left: -20rem;
+       }
+  }
+/* ESCRITORIO */
+@media only screen and (min-width: 1000px){
+    .cards-container{
+        height: 25rem;
+        width: 25rem;
+       } 
+    .linear-circle{
+        top: -10rem;
+        left: -25rem;
+    }
+    .linear{
+        bottom: 0.4rem;
+        left: -10rem;
+    }
+    .circle-footer-1, .circle-footer-2{
+        bottom: 1rem;
+    }
+    .circle-title-2{
+        left: 47.5rem;
+        top: 7.7rem;
+    }
+
+}
